@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Stats = styled.li`
+export const NoFedback = styled.p`
   margin-left: 20px;
-  margin-top: 10px;
 `;
