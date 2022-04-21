@@ -4,7 +4,7 @@ import shortid from 'shortid';
 import { Button } from '.';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  return Object.keys(options).map(option => {
+  return options.map(option => {
     const buttonId = shortid.generate();
     return (
       <Button
