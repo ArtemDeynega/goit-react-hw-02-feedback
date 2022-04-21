@@ -31,14 +31,14 @@ export class App extends Component {
   render() {
     const total = this.countTotalFeedback();
     const { good, bad, neutral } = this.state;
-    const object = Object.keys(this.state);
+    const options = Object.keys(this.state);
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
       <>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={object}
+            options={options}
             onLeaveFeedback={this.handleOnClick}
           />
         </Section>
